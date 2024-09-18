@@ -1,0 +1,1861 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introducción &#8212; Análisis de la Demanda de Servicios de Salud</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tarea-1';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Análisis de la Demanda de Servicios de Salud</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Tarea-1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introducción</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introducción</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-librerias-y-conexion-a-la-base-de-datos">Importación de Librerías y Conexión a la Base de Datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-demanda-de-servicios">Análisis de la Demanda de Servicios</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-de-atenciones-por-centro-de-salud">Mapa de Atenciones por Centro de Salud</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtencion-de-las-coordenadas-de-los-centros">Obtención de las Coordenadas de los Centros</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-los-datos-para-el-mapa">Preparación de los Datos para el Mapa</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-interactivo">Mapa Interactivo</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-los-diagnosticos-mas-frecuentes">Análisis de los Diagnósticos Más Frecuentes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evolucion-del-numero-de-atenciones-por-semana">Evolución del Número de Atenciones por Semana</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#descomposicion-de-la-serie-temporal">Descomposición de la Serie Temporal</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-componentes-de-la-serie-temporal">Interpretación de los Componentes de la Serie Temporal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componente-de-tendencia">Componente de Tendencia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componente-estacional">Componente Estacional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componente-residual">Componente Residual</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-de-estacionariedad">Evaluación de Estacionariedad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#autocorrelacion-y-autocorrelacion-parcial">Autocorrelación y Autocorrelación Parcial</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h1>
+<p>Esta serie de tiempo corresponde a una sección de mi proyecto de Profundizacion titulado <strong>“Dinámica de los Servicios de Salud en Barranquilla: Un Estudio Integrado de Demanda, Accesibilidad y Duración de la Hospitalización”</strong>. El objetivo principal de este proyecto es analizar en profundidad los patrones y tendencias en la demanda de servicios de salud en la ciudad de Barranquilla, Colombia, utilizando técnicas avanzadas de análisis de datos y visualización.</p>
+<p>En particular, esta sección se enfoca en el Análisis de la Demanda de Servicios, donde se aplican métodos estadísticos y herramientas de programación en Python para descomponer series de tiempo y comprender mejor los componentes subyacentes que afectan la demanda de atención médica en los diferentes centros de salud de la ciudad.</p>
+<p>El análisis completo y detallado del proyecto, incluyendo el Análisis Exploratorio de Datos (EDA), puede consultarse en el siguiente enlace:
+<a class="reference external" href="https://rpubs.com/reyesjj/eda_v2">https://rpubs.com/reyesjj/eda_v2</a></p>
+</section>
+<section id="importacion-de-librerias-y-conexion-a-la-base-de-datos">
+<h1>Importación de Librerías y Conexión a la Base de Datos<a class="headerlink" href="#importacion-de-librerias-y-conexion-a-la-base-de-datos" title="Link to this heading">#</a></h1>
+<p>Comenzamos importando las librerías necesarias para el análisis y estableciendo la conexión con la base de datos <code class="docutils literal notranslate"><span class="pre">PostgreSQL</span></code> donde se almacenan los datos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importar las librerías necesarias</span>
+<span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
+<span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span> <span class="o">=</span> <span class="s1">&#39;plotly_mimetype&#39;</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">folium</span>
+<span class="kn">from</span> <span class="nn">folium</span> <span class="kn">import</span> <span class="n">plugins</span>
+<span class="kn">import</span> <span class="nn">branca.colormap</span> <span class="k">as</span> <span class="nn">cm</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">statsmodels.tsa.seasonal</span> <span class="kn">import</span> <span class="n">seasonal_decompose</span>
+<span class="kn">import</span> <span class="nn">plotly.subplots</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">import</span> <span class="nn">matplotlib.dates</span> <span class="k">as</span> <span class="nn">mdates</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Credenciales para la base de datos</span>
+<span class="n">db</span> <span class="o">=</span> <span class="s1">&#39;proyecto_uninorte&#39;</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;localhost&#39;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s1">&#39;5432&#39;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s1">&#39;user_db&#39;</span>
+<span class="n">pswd</span> <span class="o">=</span> <span class="s1">&#39;jota1991&#39;</span>
+
+<span class="c1"># Conectar a la base de datos</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;postgresql://</span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">pswd</span><span class="si">}</span><span class="s1">@</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">db</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="c1"># Verificar la conexión</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Conexión exitosa a la base de datos.&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fallo en la conexión a la base de datos.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Conexión exitosa a la base de datos.
+</pre></div>
+</div>
+</div>
+</div>
+<p>La conexión se ha establecido correctamente, lo que nos permite acceder a los datos necesarios para el análisis.</p>
+</section>
+<section id="analisis-de-la-demanda-de-servicios">
+<h1>Análisis de la Demanda de Servicios<a class="headerlink" href="#analisis-de-la-demanda-de-servicios" title="Link to this heading">#</a></h1>
+</section>
+<section id="mapa-de-atenciones-por-centro-de-salud">
+<h1>Mapa de Atenciones por Centro de Salud<a class="headerlink" href="#mapa-de-atenciones-por-centro-de-salud" title="Link to this heading">#</a></h1>
+<p>El primer paso es visualizar cómo se distribuyen las <code class="docutils literal notranslate"><span class="pre">atenciones</span> <span class="pre">médicas</span></code> en los diferentes centros de salud de Barranquilla. Para ello, realizaremos lo siguiente:
+<strong>Obtención del Número de Atenciones por Centro</strong>
+Extraemos de la base de datos el número total de atenciones realizadas en cada centro de salud, agrupándolos por su nombre y tipo</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">atenciones_por_centro</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;atenciones_por_centro.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="obtencion-de-las-coordenadas-de-los-centros">
+<h2>Obtención de las Coordenadas de los Centros<a class="headerlink" href="#obtencion-de-las-coordenadas-de-los-centros" title="Link to this heading">#</a></h2>
+<p>Obtenemos las coordenadas geográficas (<code class="docutils literal notranslate"><span class="pre">latitud</span></code> y <code class="docutils literal notranslate"><span class="pre">longitud</span></code>) de cada centro de salud para poder representarlos en un mapa</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtener las coordenadas de los centros</span>
+<span class="n">coordenadas_centros</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;coordenadas_centros.csv&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># Unir los datos</span>
+<span class="n">datos_mapa</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">atenciones_por_centro</span><span class="p">,</span> <span class="n">coordenadas_centros</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;nomb_pas_cam&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="preparacion-de-los-datos-para-el-mapa">
+<h1>Preparación de los Datos para el Mapa<a class="headerlink" href="#preparacion-de-los-datos-para-el-mapa" title="Link to this heading">#</a></h1>
+<p>Unimos los datos de atenciones con las coordenadas de los centros para tener toda la información necesaria en un solo DataFrame. y Para representar visualmente la cantidad de atenciones, utilizamos una paleta de colores y escalamos el tamaño de los marcadores en función del número de atenciones.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear la paleta de colores</span>
+<span class="n">colormap</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">linear</span><span class="o">.</span><span class="n">YlOrRd_09</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span>
+    <span class="n">datos_mapa</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
+    <span class="n">datos_mapa</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="n">colormap</span> <span class="o">=</span> <span class="n">colormap</span><span class="o">.</span><span class="n">to_step</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Función para escalar tamaños</span>
+<span class="k">def</span> <span class="nf">scale_size</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">min_size</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_size</span><span class="o">=</span><span class="mi">15</span><span class="p">):</span>
+    <span class="n">x_scaled</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">datos_mapa</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">/</span> <span class="p">(</span><span class="n">datos_mapa</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">datos_mapa</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">x_scaled</span> <span class="o">*</span> <span class="p">(</span><span class="n">max_size</span> <span class="o">-</span> <span class="n">min_size</span><span class="p">)</span> <span class="o">+</span> <span class="n">min_size</span>
+
+<span class="c1"># Aplicar la función de escala</span>
+<span class="n">datos_mapa</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">datos_mapa</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">scale_size</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mapa-interactivo">
+<h1>Mapa Interactivo<a class="headerlink" href="#mapa-interactivo" title="Link to this heading">#</a></h1>
+<p>Utilizamos la librería <code class="docutils literal notranslate"><span class="pre">Folium</span></code> para crear un mapa interactivo que muestra la ubicación de los centros de salud y visualiza el número de atenciones mediante el tamaño y color de los marcadores.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Crear el mapa centrado en Barranquilla</span>
+<span class="n">mapa</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">10.96854</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.78132</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="c1"># Añadir los marcadores al mapa</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">datos_mapa</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">(</span>
+        <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;latitud_cen_aten&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;long_cen_aten&#39;</span><span class="p">]],</span>
+        <span class="n">radius</span><span class="o">=</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">],</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">colormap</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]),</span>
+        <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="n">colormap</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]),</span>
+        <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+        <span class="n">popup</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Popup</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&lt;strong&gt;</span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;nomb_pas_cam&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/strong&gt;&lt;br&gt;Tipo: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;tipo_cen_aten&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;br&gt;Atenciones: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">max_width</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">mapa</span><span class="p">)</span>
+
+<span class="c1"># Añadir la leyenda al mapa</span>
+<span class="n">colormap</span><span class="o">.</span><span class="n">caption</span> <span class="o">=</span> <span class="s1">&#39;Total de Atenciones&#39;</span>
+<span class="n">colormap</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">mapa</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el mapa</span>
+<span class="n">mapa</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_a0862ad2b673ff01710502843b9a4be8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a0862ad2b673ff01710502843b9a4be8&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_a0862ad2b673ff01710502843b9a4be8 = L.map(
+                &quot;map_a0862ad2b673ff01710502843b9a4be8&quot;,
+                {
+                    center: [10.96854, -74.78132],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24d6ae596b0e12ed77e4e61db8c789d3 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            );
+        
+    
+            tile_layer_24d6ae596b0e12ed77e4e61db8c789d3.addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+            var circle_marker_a299d5a4105a4ed87ab15c2f8c176a38 = L.circleMarker(
+                [10.95675005, -74.8172603272666],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#f43c25ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#f43c25ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 11.074014098828645, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_4370d49e2b002af8bec3157deac03515 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_04fccb2bcce749e6959311518095450b = $(`&lt;div id=&quot;html_04fccb2bcce749e6959311518095450b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;CAMINO BOSQUE DE MARIA&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 328638&lt;/div&gt;`)[0];
+                popup_4370d49e2b002af8bec3157deac03515.setContent(html_04fccb2bcce749e6959311518095450b);
+            
+        
+
+        circle_marker_a299d5a4105a4ed87ab15c2f8c176a38.bindPopup(popup_4370d49e2b002af8bec3157deac03515)
+        ;
+
+        
+    
+    
+            var circle_marker_4d8e3eec3d77f9ed3ce65fea3aa4b4ba = L.circleMarker(
+                [10.92853, -74.8071090601366],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#febf5aff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#febf5aff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8.06000459951002, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_e355eb81679a62198f4443edfce7f9c9 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_e82b014158ca3b285bed6b002e5c660f = $(`&lt;div id=&quot;html_e82b014158ca3b285bed6b002e5c660f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;CAMINO CIUDADELA 20 DE JULIO&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 170058&lt;/div&gt;`)[0];
+                popup_e355eb81679a62198f4443edfce7f9c9.setContent(html_e82b014158ca3b285bed6b002e5c660f);
+            
+        
+
+        circle_marker_4d8e3eec3d77f9ed3ce65fea3aa4b4ba.bindPopup(popup_e355eb81679a62198f4443edfce7f9c9)
+        ;
+
+        
+    
+    
+            var circle_marker_c68643a6c2b0a54f9d4de71c30c54f06 = L.circleMarker(
+                [10.9560779, -74.7720077208528],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fe9e43ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#fe9e43ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 9.42678131230483, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_bf95c3ec1ab1f4d8816384c0767e49e8 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_1edc408c4f739c0f57e73f848ce62f4f = $(`&lt;div id=&quot;html_1edc408c4f739c0f57e73f848ce62f4f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;CAMINO LUZ CHINITA&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 241970&lt;/div&gt;`)[0];
+                popup_bf95c3ec1ab1f4d8816384c0767e49e8.setContent(html_1edc408c4f739c0f57e73f848ce62f4f);
+            
+        
+
+        circle_marker_c68643a6c2b0a54f9d4de71c30c54f06.bindPopup(popup_bf95c3ec1ab1f4d8816384c0767e49e8)
+        ;
+
+        
+    
+    
+            var circle_marker_b4e73078ef2bef1f364accd12ce59dbe = L.circleMarker(
+                [10.93081235, -74.8192859261451],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#febf5aff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#febf5aff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8.614986800166495, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_f86c5ed74394c9203d322f5df5bc3f49 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_517623f87bf2f686312ab5c72732a67f = $(`&lt;div id=&quot;html_517623f87bf2f686312ab5c72732a67f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;CAMINO METROPOLITANO&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 199258&lt;/div&gt;`)[0];
+                popup_f86c5ed74394c9203d322f5df5bc3f49.setContent(html_517623f87bf2f686312ab5c72732a67f);
+            
+        
+
+        circle_marker_b4e73078ef2bef1f364accd12ce59dbe.bindPopup(popup_f86c5ed74394c9203d322f5df5bc3f49)
+        ;
+
+        
+    
+    
+            var circle_marker_d68a726994181437bee14e2585d8d58d = L.circleMarker(
+                [10.9490817, -74.7994153567537],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fd7134ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#fd7134ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10.630446475577934, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_6a47f43c7981b29dce4d002919dc32d8 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_59703c50f29041ee350327b4a41c6a26 = $(`&lt;div id=&quot;html_59703c50f29041ee350327b4a41c6a26&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;CAMINO MURILLO&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 305300&lt;/div&gt;`)[0];
+                popup_6a47f43c7981b29dce4d002919dc32d8.setContent(html_59703c50f29041ee350327b4a41c6a26);
+            
+        
+
+        circle_marker_d68a726994181437bee14e2585d8d58d.bindPopup(popup_6a47f43c7981b29dce4d002919dc32d8)
+        ;
+
+        
+    
+    
+            var circle_marker_54f6862aa22de59a80d6c428896fe048 = L.circleMarker(
+                [10.94354065, -74.7781569089551],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#f43c25ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#f43c25ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 11.702512434832355, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_61cae157a242f549e898e4e1387bde07 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_fa3b0a5240a7716eeac6a06a808764ab = $(`&lt;div id=&quot;html_fa3b0a5240a7716eeac6a06a808764ab&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;CAMINO SIMON BOLIVAR&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 361706&lt;/div&gt;`)[0];
+                popup_61cae157a242f549e898e4e1387bde07.setContent(html_fa3b0a5240a7716eeac6a06a808764ab);
+            
+        
+
+        circle_marker_54f6862aa22de59a80d6c428896fe048.bindPopup(popup_61cae157a242f549e898e4e1387bde07)
+        ;
+
+        
+    
+    
+            var circle_marker_3a33bad2f4e014ebaf657dc555579d59 = L.circleMarker(
+                [10.9652843, -74.7979458929553],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fe9e43ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#fe9e43ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 9.761690262913316, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_72b06c4e8db780034b1a52f120064e65 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_62b9cb599598c81dd904a77827559608 = $(`&lt;div id=&quot;html_62b9cb599598c81dd904a77827559608&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;Camino Adelita de Char&lt;/strong&gt;&lt;br&gt;Tipo: HOSPITAL&lt;br&gt;Atenciones: 259591&lt;/div&gt;`)[0];
+                popup_72b06c4e8db780034b1a52f120064e65.setContent(html_62b9cb599598c81dd904a77827559608);
+            
+        
+
+        circle_marker_3a33bad2f4e014ebaf657dc555579d59.bindPopup(popup_72b06c4e8db780034b1a52f120064e65)
+        ;
+
+        
+    
+    
+            var circle_marker_af2f2f93bfc2019f718ab7f3c8e9f4e6 = L.circleMarker(
+                [10.96323945, -74.8392906552324],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fd7134ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#fd7134ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10.27217885631853, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_3dcffa8b8153ee209a9499fe3b968936 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_e79d888817f4320b1cee2401c0313bc8 = $(`&lt;div id=&quot;html_e79d888817f4320b1cee2401c0313bc8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;Camino Suroccidente El Pueblito&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 286450&lt;/div&gt;`)[0];
+                popup_3dcffa8b8153ee209a9499fe3b968936.setContent(html_e79d888817f4320b1cee2401c0313bc8);
+            
+        
+
+        circle_marker_af2f2f93bfc2019f718ab7f3c8e9f4e6.bindPopup(popup_3dcffa8b8153ee209a9499fe3b968936)
+        ;
+
+        
+    
+    
+            var circle_marker_5b0c73bbcfd109afbb974cbd7608fd5d = L.circleMarker(
+                [10.9732352, -74.7804889],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.785617218132713, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_a3e3585723e3211a221a6acecd9dc7e1 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_c4cd1836591054db1a230afedf46ea42 = $(`&lt;div id=&quot;html_c4cd1836591054db1a230afedf46ea42&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;HOSPITAL GENERAL DE BARRANQUILLA&lt;/strong&gt;&lt;br&gt;Tipo: HOSPITAL&lt;br&gt;Atenciones: 103007&lt;/div&gt;`)[0];
+                popup_a3e3585723e3211a221a6acecd9dc7e1.setContent(html_c4cd1836591054db1a230afedf46ea42);
+            
+        
+
+        circle_marker_5b0c73bbcfd109afbb974cbd7608fd5d.bindPopup(popup_a3e3585723e3211a221a6acecd9dc7e1)
+        ;
+
+        
+    
+    
+            var circle_marker_12e53ac0d7ecc3458452a03e4d949523 = L.circleMarker(
+                [10.9607269, -74.8018303937192],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#800026ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#800026ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 15.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_d656fa7f22fc7f3092e43456070f16d7 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_a2067c5d7245f2da5531ef5bc46d8feb = $(`&lt;div id=&quot;html_a2067c5d7245f2da5531ef5bc46d8feb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;HOSPITAL NAZARETH&lt;/strong&gt;&lt;br&gt;Tipo: HOSPITAL&lt;br&gt;Atenciones: 535201&lt;/div&gt;`)[0];
+                popup_d656fa7f22fc7f3092e43456070f16d7.setContent(html_a2067c5d7245f2da5531ef5bc46d8feb);
+            
+        
+
+        circle_marker_12e53ac0d7ecc3458452a03e4d949523.bindPopup(popup_d656fa7f22fc7f3092e43456070f16d7)
+        ;
+
+        
+    
+    
+            var circle_marker_62441ae1b9a6a32eada816cd9653b762 = L.circleMarker(
+                [10.97032425, -74.8236622664526],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fd7134ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#fd7134ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10.634513810884112, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_542e46c5c84187ca51bf04442deccf4f = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_75feea4fa43701267406881b9552b384 = $(`&lt;div id=&quot;html_75feea4fa43701267406881b9552b384&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;Hospital La Manga&lt;/strong&gt;&lt;br&gt;Tipo: CAMINO&lt;br&gt;Atenciones: 305514&lt;/div&gt;`)[0];
+                popup_542e46c5c84187ca51bf04442deccf4f.setContent(html_75feea4fa43701267406881b9552b384);
+            
+        
+
+        circle_marker_62441ae1b9a6a32eada816cd9653b762.bindPopup(popup_542e46c5c84187ca51bf04442deccf4f)
+        ;
+
+        
+    
+    
+            var circle_marker_c43534b9622d0d6d2fd41f5d2bad9e2c = L.circleMarker(
+                [10.96462625, -74.8077840345628],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.0719462199440075, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_e236039a48011068fe9bea3e7da636f1 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_7ec9ce478b492f9bbd9dd3272f9adaa3 = $(`&lt;div id=&quot;html_7ec9ce478b492f9bbd9dd3272f9adaa3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO BUENA ESPERANZA&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 118072&lt;/div&gt;`)[0];
+                popup_e236039a48011068fe9bea3e7da636f1.setContent(html_7ec9ce478b492f9bbd9dd3272f9adaa3);
+            
+        
+
+        circle_marker_c43534b9622d0d6d2fd41f5d2bad9e2c.bindPopup(popup_e236039a48011068fe9bea3e7da636f1)
+        ;
+
+        
+    
+    
+            var circle_marker_0a33903a7629d8d79c0467fd4c1c0ecf = L.circleMarker(
+                [10.9749951, -74.8136044183942],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.64367291781892, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_e4e714424a3b6c59a3cf80fd15091b1a = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_c36179b14707954b293cf89206cab9c8 = $(`&lt;div id=&quot;html_c36179b14707954b293cf89206cab9c8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO CARLOS MEISEL&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 148153&lt;/div&gt;`)[0];
+                popup_e4e714424a3b6c59a3cf80fd15091b1a.setContent(html_c36179b14707954b293cf89206cab9c8);
+            
+        
+
+        circle_marker_0a33903a7629d8d79c0467fd4c1c0ecf.bindPopup(popup_e4e714424a3b6c59a3cf80fd15091b1a)
+        ;
+
+        
+    
+    
+            var circle_marker_2d14450a6a6db60b920c082083eb70db = L.circleMarker(
+                [10.93934855, -74.8040089636507],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.791509152454751, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_883f6b94acd9458849a8ea54a9055286 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_1ddfbe2eface50eef572a3570d7eef32 = $(`&lt;div id=&quot;html_1ddfbe2eface50eef572a3570d7eef32&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO CARRIZAL&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 103317&lt;/div&gt;`)[0];
+                popup_883f6b94acd9458849a8ea54a9055286.setContent(html_1ddfbe2eface50eef572a3570d7eef32);
+            
+        
+
+        circle_marker_2d14450a6a6db60b920c082083eb70db.bindPopup(popup_883f6b94acd9458849a8ea54a9055286)
+        ;
+
+        
+    
+    
+            var circle_marker_4128cfa21b5000288dc5dc25e5e3f9f7 = L.circleMarker(
+                [10.9470984, -74.7672051286357],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.201897582976491, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_7a05e1354cc31deea875e870e41be863 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_379044d937d661959ff95715c75a2463 = $(`&lt;div id=&quot;html_379044d937d661959ff95715c75a2463&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO EL FERRY&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 72295&lt;/div&gt;`)[0];
+                popup_7a05e1354cc31deea875e870e41be863.setContent(html_379044d937d661959ff95715c75a2463);
+            
+        
+
+        circle_marker_4128cfa21b5000288dc5dc25e5e3f9f7.bindPopup(popup_7a05e1354cc31deea875e870e41be863)
+        ;
+
+        
+    
+    
+            var circle_marker_e22afa18d2cbfb1e7eec4b67ee3ee56d = L.circleMarker(
+                [10.9353067, -74.7936269806982],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.2409877162672505, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_4da8d21d74bed2ec1834939a2f23f270 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_d0fc209433cd0c952e341e41c294de5b = $(`&lt;div id=&quot;html_d0fc209433cd0c952e341e41c294de5b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO GALAN&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 126966&lt;/div&gt;`)[0];
+                popup_4da8d21d74bed2ec1834939a2f23f270.setContent(html_d0fc209433cd0c952e341e41c294de5b);
+            
+        
+
+        circle_marker_e22afa18d2cbfb1e7eec4b67ee3ee56d.bindPopup(popup_4da8d21d74bed2ec1834939a2f23f270)
+        ;
+
+        
+    
+    
+            var circle_marker_0d3f7035da925858bf49fae13ca61e64 = L.circleMarker(
+                [10.9617582, -74.7813890572402],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.741541748155919, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_862920ef014df1f72ef9f70b450a8a65 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_4aec706dea83019b95c0917047f7d703 = $(`&lt;div id=&quot;html_4aec706dea83019b95c0917047f7d703&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO JULIO MONTES&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 100688&lt;/div&gt;`)[0];
+                popup_862920ef014df1f72ef9f70b450a8a65.setContent(html_4aec706dea83019b95c0917047f7d703);
+            
+        
+
+        circle_marker_0d3f7035da925858bf49fae13ca61e64.bindPopup(popup_862920ef014df1f72ef9f70b450a8a65)
+        ;
+
+        
+    
+    
+            var circle_marker_41c1141a9c26bc4f3f8151dddbb56fb7 = L.circleMarker(
+                [10.9621008, -74.7944924415763],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#febf5aff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#febf5aff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8.818068471879318, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_efab2aef20639cf5af1e7675621476bc = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_983329db52cfa6c10e116da148e2d9d0 = $(`&lt;div id=&quot;html_983329db52cfa6c10e116da148e2d9d0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LA 21&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 209943&lt;/div&gt;`)[0];
+                popup_efab2aef20639cf5af1e7675621476bc.setContent(html_983329db52cfa6c10e116da148e2d9d0);
+            
+        
+
+        circle_marker_41c1141a9c26bc4f3f8151dddbb56fb7.bindPopup(popup_efab2aef20639cf5af1e7675621476bc)
+        ;
+
+        
+    
+    
+            var circle_marker_9b8665d1eaeaae20a3ff90159267a8d2 = L.circleMarker(
+                [10.96363285, -74.8203000729703],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.71998867228111, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_7113503b1c3baaf548bd46ff3b60efbf = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_e6e53736bbaca5ca967101964c7ae546 = $(`&lt;div id=&quot;html_e6e53736bbaca5ca967101964c7ae546&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LA ESMERALDA - LIPAYA&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 99554&lt;/div&gt;`)[0];
+                popup_7113503b1c3baaf548bd46ff3b60efbf.setContent(html_e6e53736bbaca5ca967101964c7ae546);
+            
+        
+
+        circle_marker_9b8665d1eaeaae20a3ff90159267a8d2.bindPopup(popup_7113503b1c3baaf548bd46ff3b60efbf)
+        ;
+
+        
+    
+    
+            var circle_marker_62f9900484ee0bdb66041d9fb72dfc28 = L.circleMarker(
+                [10.9770694, -74.8443790862907],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.9216391741408705, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_68a6814f874dafa6adcbe6a3b479b668 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_11dc73cbb5c6296db484c1eb525ec638 = $(`&lt;div id=&quot;html_11dc73cbb5c6296db484c1eb525ec638&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LA PRADERA&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 162778&lt;/div&gt;`)[0];
+                popup_68a6814f874dafa6adcbe6a3b479b668.setContent(html_11dc73cbb5c6296db484c1eb525ec638);
+            
+        
+
+        circle_marker_62f9900484ee0bdb66041d9fb72dfc28.bindPopup(popup_68a6814f874dafa6adcbe6a3b479b668)
+        ;
+
+        
+    
+    
+            var circle_marker_0c8be0293991e4427a6be6b9cabcc9e7 = L.circleMarker(
+                [10.945694, -74.818602278485],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.753534685437229, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_aeb212ce6b405cac23d4307ef603c8f1 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_a491617daecabb9abc7b95fa518fa163 = $(`&lt;div id=&quot;html_a491617daecabb9abc7b95fa518fa163&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LA SIERRITA&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 101319&lt;/div&gt;`)[0];
+                popup_aeb212ce6b405cac23d4307ef603c8f1.setContent(html_a491617daecabb9abc7b95fa518fa163);
+            
+        
+
+        circle_marker_0c8be0293991e4427a6be6b9cabcc9e7.bindPopup(popup_aeb212ce6b405cac23d4307ef603c8f1)
+        ;
+
+        
+    
+    
+            var circle_marker_9e0aff0acfc451376cb8e8d27a991c3d = L.circleMarker(
+                [10.94737065, -74.8268668099046],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.931718183079505, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_bfd85e47bf23bb0bb7210c0651c0e943 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_3e0dee73dc4b0c37f799bfd63a993cb6 = $(`&lt;div id=&quot;html_3e0dee73dc4b0c37f799bfd63a993cb6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LA VILLA&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 110694&lt;/div&gt;`)[0];
+                popup_bfd85e47bf23bb0bb7210c0651c0e943.setContent(html_3e0dee73dc4b0c37f799bfd63a993cb6);
+            
+        
+
+        circle_marker_9e0aff0acfc451376cb8e8d27a991c3d.bindPopup(popup_bfd85e47bf23bb0bb7210c0651c0e943)
+        ;
+
+        
+    
+    
+            var circle_marker_ff5cb060dd40055cb16bfae44dbcd09a = L.circleMarker(
+                [10.9560742, -74.8322776097449],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.636963715187696, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_c02105ca1beb96871b31a49e7fd6e8bb = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_17ace7184a6781a2f8dbbdcd58900550 = $(`&lt;div id=&quot;html_17ace7184a6781a2f8dbbdcd58900550&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LAS MALVINAS&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 147800&lt;/div&gt;`)[0];
+                popup_c02105ca1beb96871b31a49e7fd6e8bb.setContent(html_17ace7184a6781a2f8dbbdcd58900550);
+            
+        
+
+        circle_marker_ff5cb060dd40055cb16bfae44dbcd09a.bindPopup(popup_c02105ca1beb96871b31a49e7fd6e8bb)
+        ;
+
+        
+    
+    
+            var circle_marker_7bce3fe4b34e7bba6a54d60e73532ef1 = L.circleMarker(
+                [10.95244755, -74.7793808385988],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.798313386284717, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_288046a3fa8653e7c2f633e43da694fe = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_ec2e7f02f2804e41acc003fb07372dac = $(`&lt;div id=&quot;html_ec2e7f02f2804e41acc003fb07372dac&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LAS NIEVES&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 103675&lt;/div&gt;`)[0];
+                popup_288046a3fa8653e7c2f633e43da694fe.setContent(html_ec2e7f02f2804e41acc003fb07372dac);
+            
+        
+
+        circle_marker_7bce3fe4b34e7bba6a54d60e73532ef1.bindPopup(popup_288046a3fa8653e7c2f633e43da694fe)
+        ;
+
+        
+    
+    
+            var circle_marker_b5c51ad3b16735c3d57758929d1441eb = L.circleMarker(
+                [10.94438515, -74.788867483919],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.930045633981636, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_5b804ecb6e3272412ae85c7896fd1974 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_6ef9952e01b7423b8a74d15bed791662 = $(`&lt;div id=&quot;html_6ef9952e01b7423b8a74d15bed791662&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO LAS PALMAS&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 110606&lt;/div&gt;`)[0];
+                popup_5b804ecb6e3272412ae85c7896fd1974.setContent(html_6ef9952e01b7423b8a74d15bed791662);
+            
+        
+
+        circle_marker_b5c51ad3b16735c3d57758929d1441eb.bindPopup(popup_5b804ecb6e3272412ae85c7896fd1974)
+        ;
+
+        
+    
+    
+            var circle_marker_adec4696808933f92482d72366aadd77 = L.circleMarker(
+                [10.97822705, -74.826743680224],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.619744061975546, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_e258d7443810edfd3da5ef15f2b89cb5 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_45c85711a2d8d584ee7fef51105b5a10 = $(`&lt;div id=&quot;html_45c85711a2d8d584ee7fef51105b5a10&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO NUEVA ERA&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 146894&lt;/div&gt;`)[0];
+                popup_e258d7443810edfd3da5ef15f2b89cb5.setContent(html_45c85711a2d8d584ee7fef51105b5a10);
+            
+        
+
+        circle_marker_adec4696808933f92482d72366aadd77.bindPopup(popup_e258d7443810edfd3da5ef15f2b89cb5)
+        ;
+
+        
+    
+    
+            var circle_marker_b4f86feaaaad9d5d4f535c89de717e15 = L.circleMarker(
+                [10.924575, -74.8113697469636],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.1814791796146675, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_b1b11d4f4561f88034166f4a4b2062dc = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_46462793568e84defeb052baf547f8c1 = $(`&lt;div id=&quot;html_46462793568e84defeb052baf547f8c1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO NUEVA VIDA&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 123835&lt;/div&gt;`)[0];
+                popup_b1b11d4f4561f88034166f4a4b2062dc.setContent(html_46462793568e84defeb052baf547f8c1);
+            
+        
+
+        circle_marker_b4f86feaaaad9d5d4f535c89de717e15.bindPopup(popup_b1b11d4f4561f88034166f4a4b2062dc)
+        ;
+
+        
+    
+    
+            var circle_marker_35a39145f5fca43f0903ca5984fa9a50 = L.circleMarker(
+                [10.9663378, -74.7742046232987],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.183189741192034, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_19ca650d77fbcda285b11f9bf13992e2 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_d0c7eeeb77f7802c826348bb2a609b2e = $(`&lt;div id=&quot;html_d0c7eeeb77f7802c826348bb2a609b2e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO REBOLO&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 123925&lt;/div&gt;`)[0];
+                popup_19ca650d77fbcda285b11f9bf13992e2.setContent(html_d0c7eeeb77f7802c826348bb2a609b2e);
+            
+        
+
+        circle_marker_35a39145f5fca43f0903ca5984fa9a50.bindPopup(popup_19ca650d77fbcda285b11f9bf13992e2)
+        ;
+
+        
+    
+    
+            var circle_marker_bd37415030d68717ee4b434c83a7d4a3 = L.circleMarker(
+                [10.97405245, -74.8083984988905],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffffccff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffffccff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_bacf70b0c54f153ee2b2da4ed1dbda3e = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_01b99ed2e0ad587876684371cbc0dc9f = $(`&lt;div id=&quot;html_01b99ed2e0ad587876684371cbc0dc9f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO SAN FELIPE&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 9058&lt;/div&gt;`)[0];
+                popup_bacf70b0c54f153ee2b2da4ed1dbda3e.setContent(html_01b99ed2e0ad587876684371cbc0dc9f);
+            
+        
+
+        circle_marker_bd37415030d68717ee4b434c83a7d4a3.bindPopup(popup_bacf70b0c54f153ee2b2da4ed1dbda3e)
+        ;
+
+        
+    
+    
+            var circle_marker_bdb551ba38240473224a254a59b77312 = L.circleMarker(
+                [10.9620028, -74.7900003678673],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.733388071303809, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_b7233ddc369761df4cba00ac50b5b5f9 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_102876912b9810ebe9aa191012a81fc9 = $(`&lt;div id=&quot;html_102876912b9810ebe9aa191012a81fc9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO SAN JOSE&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 100259&lt;/div&gt;`)[0];
+                popup_b7233ddc369761df4cba00ac50b5b5f9.setContent(html_102876912b9810ebe9aa191012a81fc9);
+            
+        
+
+        circle_marker_bdb551ba38240473224a254a59b77312.bindPopup(popup_b7233ddc369761df4cba00ac50b5b5f9)
+        ;
+
+        
+    
+    
+            var circle_marker_0394d2ac7469c21d3e507720d7b80de3 = L.circleMarker(
+                [10.9396975, -74.8125378573764],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.776627266731667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_6465e51b64073b2497e773dfb5e12c59 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_dae95d69701c1ab7b6007085b44b2b94 = $(`&lt;div id=&quot;html_dae95d69701c1ab7b6007085b44b2b94&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO SANTO DOMINGO&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 102534&lt;/div&gt;`)[0];
+                popup_6465e51b64073b2497e773dfb5e12c59.setContent(html_dae95d69701c1ab7b6007085b44b2b94);
+            
+        
+
+        circle_marker_0394d2ac7469c21d3e507720d7b80de3.bindPopup(popup_6465e51b64073b2497e773dfb5e12c59)
+        ;
+
+        
+    
+    
+            var circle_marker_801f2e42d21f5d47c7c0b047a69800aa = L.circleMarker(
+                [10.93617745, -74.8280757590821],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffde7fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffde7fff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.930610119302166, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_ca6c3bcc2a1f67121ae65ed4e6ed6451 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_676f9ea18966dfedfc5778126339b425 = $(`&lt;div id=&quot;html_676f9ea18966dfedfc5778126339b425&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO UNIVERSAL&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 163250&lt;/div&gt;`)[0];
+                popup_ca6c3bcc2a1f67121ae65ed4e6ed6451.setContent(html_676f9ea18966dfedfc5778126339b425);
+            
+        
+
+        circle_marker_801f2e42d21f5d47c7c0b047a69800aa.bindPopup(popup_ca6c3bcc2a1f67121ae65ed4e6ed6451)
+        ;
+
+        
+    
+    
+            var circle_marker_d37290dcf0df7dc41332afe2c83c90e3 = L.circleMarker(
+                [10.9566249, -74.8659878312236],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#ffefa5ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ffefa5ff&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.5456444350680325, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_a0862ad2b673ff01710502843b9a4be8);
+        
+    
+        var popup_788868b95c624bf5addc622b3789f195 = L.popup({&quot;maxWidth&quot;: 300});
+
+        
+            
+                var html_a5346844d5bdb5b2d998ad8d432deab6 = $(`&lt;div id=&quot;html_a5346844d5bdb5b2d998ad8d432deab6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;strong&gt;PASO VILLA DE SAN PABLO&lt;/strong&gt;&lt;br&gt;Tipo: PASO&lt;br&gt;Atenciones: 90381&lt;/div&gt;`)[0];
+                popup_788868b95c624bf5addc622b3789f195.setContent(html_a5346844d5bdb5b2d998ad8d432deab6);
+            
+        
+
+        circle_marker_d37290dcf0df7dc41332afe2c83c90e3.bindPopup(popup_788868b95c624bf5addc622b3789f195)
+        ;
+
+        
+    
+    
+    var color_map_31b9f07d478e4b762de875680aff12fe = {};
+
+    
+    color_map_31b9f07d478e4b762de875680aff12fe.color = d3.scale.threshold()
+              .domain([9058.0, 10112.394789579159, 11166.789579158316, 12221.184368737475, 13275.579158316632, 14329.973947895793, 15384.36873747495, 16438.763527054107, 17493.158316633264, 18547.553106212425, 19601.947895791585, 20656.342685370742, 21710.7374749499, 22765.132264529057, 23819.527054108217, 24873.921843687374, 25928.31663326653, 26982.711422845692, 28037.10621242485, 29091.501002004006, 30145.895791583167, 31200.290581162324, 32254.68537074148, 33309.08016032064, 34363.4749498998, 35417.86973947896, 36472.26452905811, 37526.65931863728, 38581.054108216435, 39635.44889779559, 40689.84368737475, 41744.238476953906, 42798.63326653306, 43853.02805611223, 44907.422845691384, 45961.81763527054, 47016.2124248497, 48070.607214428856, 49125.00200400801, 50179.39679358718, 51233.791583166334, 52288.18637274549, 53342.58116232465, 54396.975951903805, 55451.37074148296, 56505.76553106213, 57560.160320641284, 58614.55511022044, 59668.9498997996, 60723.344689378755, 61777.73947895792, 62832.13426853708, 63886.52905811623, 64940.92384769539, 65995.31863727455, 67049.7134268537, 68104.10821643287, 69158.50300601203, 70212.89779559118, 71267.29258517033, 72321.6873747495, 73376.08216432866, 74430.47695390781, 75484.87174348698, 76539.26653306613, 77593.66132264529, 78648.05611222445, 79702.4509018036, 80756.84569138277, 81811.24048096192, 82865.63527054108, 83920.03006012025, 84974.4248496994, 86028.81963927856, 87083.21442885771, 88137.60921843688, 89192.00400801603, 90246.39879759519, 91300.79358717435, 92355.1883767535, 93409.58316633267, 94463.97795591182, 95518.37274549098, 96572.76753507015, 97627.1623246493, 98681.55711422846, 99735.95190380761, 100790.34669338677, 101844.74148296592, 102899.13627254509, 103953.53106212425, 105007.9258517034, 106062.32064128257, 107116.71543086172, 108171.11022044088, 109225.50501002005, 110279.8997995992, 111334.29458917836, 112388.68937875751, 113443.08416833667, 114497.47895791584, 115551.87374749499, 116606.26853707415, 117660.6633266533, 118715.05811623247, 119769.45290581162, 120823.84769539078, 121878.24248496995, 122932.6372745491, 123987.03206412826, 125041.42685370741, 126095.82164328657, 127150.21643286574, 128204.61122244489, 129259.00601202405, 130313.4008016032, 131367.79559118237, 132422.19038076152, 133476.58517034067, 134530.97995991984, 135585.374749499, 136639.76953907817, 137694.16432865732, 138748.55911823647, 139802.95390781562, 140857.3486973948, 141911.74348697395, 142966.1382765531, 144020.53306613225, 145074.92785571143, 146129.32264529058, 147183.71743486973, 148238.1122244489, 149292.50701402806, 150346.9018036072, 151401.29659318636, 152455.69138276554, 153510.0861723447, 154564.48096192384, 155618.87575150302, 156673.27054108217, 157727.66533066132, 158782.0601202405, 159836.45490981964, 160890.8496993988, 161945.24448897794, 162999.63927855712, 164054.03406813627, 165108.42885771542, 166162.8236472946, 167217.21843687375, 168271.6132264529, 169326.00801603205, 170380.40280561123, 171434.79759519038, 172489.19238476953, 173543.5871743487, 174597.98196392786, 175652.376753507, 176706.7715430862, 177761.16633266534, 178815.5611222445, 179869.95591182364, 180924.35070140281, 181978.74549098196, 183033.1402805611, 184087.5350701403, 185141.92985971944, 186196.3246492986, 187250.71943887774, 188305.11422845692, 189359.50901803607, 190413.90380761522, 191468.2985971944, 192522.69338677355, 193577.0881763527, 194631.48296593185, 195685.87775551103, 196740.27254509018, 197794.66733466933, 198849.0621242485, 199903.45691382766, 200957.8517034068, 202012.24649298599, 203066.64128256514, 204121.03607214428, 205175.43086172343, 206229.8256513026, 207284.22044088176, 208338.6152304609, 209393.0100200401, 210447.40480961924, 211501.7995991984, 212556.19438877754, 213610.58917835672, 214664.98396793587, 215719.37875751502, 216773.7735470942, 217828.16833667335, 218882.5631262525, 219936.95791583168, 220991.35270541083, 222045.74749498998, 223100.14228456913, 224154.5370741483, 225208.93186372746, 226263.3266533066, 227317.72144288578, 228372.11623246493, 229426.51102204408, 230480.90581162323, 231535.3006012024, 232589.69539078156, 233644.0901803607, 234698.4849699399, 235752.87975951904, 236807.2745490982, 237861.66933867734, 238916.06412825652, 239970.45891783567, 241024.85370741482, 242079.248496994, 243133.64328657315, 244188.0380761523, 245242.43286573148, 246296.82765531063, 247351.22244488978, 248405.61723446893, 249460.0120240481, 250514.40681362725, 251568.8016032064, 252623.19639278558, 253677.59118236473, 254731.98597194388, 255786.38076152303, 256840.7755511022, 257895.17034068136, 258949.5651302605, 260003.9599198397, 261058.35470941884, 262112.749498998, 263167.14428857714, 264221.53907815635, 265275.93386773544, 266330.32865731465, 267384.7234468938, 268439.11823647295, 269493.5130260521, 270547.90781563125, 271602.3026052104, 272656.6973947896, 273711.09218436875, 274765.4869739479, 275819.88176352705, 276874.2765531062, 277928.67134268535, 278983.0661322645, 280037.4609218437, 281091.85571142286, 282146.250501002, 283200.64529058116, 284255.0400801603, 285309.43486973946, 286363.8296593186, 287418.2244488978, 288472.61923847697, 289527.0140280561, 290581.40881763527, 291635.8036072144, 292690.19839679357, 293744.5931863727, 294798.9879759519, 295853.3827655311, 296907.7775551102, 297962.1723446894, 299016.5671342685, 300070.9619238477, 301125.3567134269, 302179.75150300603, 303234.1462925852, 304288.54108216433, 305342.9358717435, 306397.33066132263, 307451.7254509018, 308506.120240481, 309560.51503006014, 310614.9098196393, 311669.30460921844, 312723.6993987976, 313778.09418837674, 314832.4889779559, 315886.8837675351, 316941.27855711424, 317995.6733466934, 319050.06813627254, 320104.4629258517, 321158.85771543084, 322213.25250501, 323267.6472945892, 324322.04208416835, 325376.4368737475, 326430.83166332665, 327485.2264529058, 328539.62124248495, 329594.0160320641, 330648.4108216433, 331702.80561122246, 332757.2004008016, 333811.59519038076, 334865.9899799599, 335920.38476953906, 336974.7795591182, 338029.1743486974, 339083.56913827657, 340137.9639278557, 341192.35871743486, 342246.753507014, 343301.14829659316, 344355.5430861724, 345409.9378757515, 346464.3326653307, 347518.7274549098, 348573.122244489, 349627.5170340681, 350681.9118236473, 351736.3066132265, 352790.70140280563, 353845.0961923848, 354899.4909819639, 355953.8857715431, 357008.2805611222, 358062.6753507014, 359117.0701402806, 360171.46492985974, 361225.8597194389, 362280.25450901804, 363334.6492985972, 364389.04408817634, 365443.4388777555, 366497.8336673347, 367552.22845691384, 368606.623246493, 369661.01803607214, 370715.4128256513, 371769.80761523044, 372824.2024048096, 373878.5971943888, 374932.99198396795, 375987.3867735471, 377041.78156312625, 378096.1763527054, 379150.57114228455, 380204.9659318637, 381259.3607214429, 382313.75551102206, 383368.1503006012, 384422.54509018036, 385476.9398797595, 386531.33466933866, 387585.72945891786, 388640.124248497, 389694.51903807616, 390748.9138276553, 391803.30861723446, 392857.7034068136, 393912.09819639276, 394966.49298597197, 396020.8877755511, 397075.28256513027, 398129.6773547094, 399184.07214428857, 400238.4669338677, 401292.86172344687, 402347.2565130261, 403401.6513026052, 404456.0460921844, 405510.4408817635, 406564.8356713427, 407619.2304609218, 408673.625250501, 409728.0200400802, 410782.41482965933, 411836.8096192385, 412891.20440881763, 413945.5991983968, 414999.99398797593, 416054.3887775551, 417108.7835671343, 418163.17835671344, 419217.5731462926, 420271.96793587174, 421326.3627254509, 422380.75751503004, 423435.1523046092, 424489.5470941884, 425543.94188376755, 426598.3366733467, 427652.73146292585, 428707.126252505, 429761.52104208415, 430815.91583166335, 431870.3106212425, 432924.70541082165, 433979.1002004008, 435033.49498997995, 436087.8897795591, 437142.28456913825, 438196.67935871746, 439251.0741482966, 440305.46893787576, 441359.8637274549, 442414.25851703406, 443468.6533066132, 444523.04809619236, 445577.44288577157, 446631.8376753507, 447686.23246492987, 448740.627254509, 449795.02204408817, 450849.4168336673, 451903.81162324647, 452958.2064128257, 454012.6012024048, 455066.995991984, 456121.3907815631, 457175.7855711423, 458230.1803607214, 459284.5751503006, 460338.9699398798, 461393.36472945893, 462447.7595190381, 463502.15430861723, 464556.5490981964, 465610.94388777553, 466665.3386773547, 467719.7334669339, 468774.12825651304, 469828.5230460922, 470882.91783567134, 471937.3126252505, 472991.70741482964, 474046.10220440885, 475100.496993988, 476154.89178356715, 477209.2865731463, 478263.68136272545, 479318.0761523046, 480372.47094188374, 481426.86573146295, 482481.2605210421, 483535.65531062125, 484590.0501002004, 485644.44488977955, 486698.8396793587, 487753.23446893785, 488807.62925851706, 489862.0240480962, 490916.41883767536, 491970.8136272545, 493025.20841683366, 494079.6032064128, 495133.99799599196, 496188.39278557117, 497242.7875751503, 498297.18236472947, 499351.5771543086, 500405.97194388777, 501460.3667334669, 502514.76152304607, 503569.1563126253, 504623.5511022044, 505677.9458917836, 506732.3406813627, 507786.7354709419, 508841.130260521, 509895.5250501002, 510949.9198396794, 512004.31462925853, 513058.7094188377, 514113.10420841683, 515167.498997996, 516221.8937875751, 517276.28857715434, 518330.6833667335, 519385.07815631264, 520439.4729458918, 521493.86773547094, 522548.2625250501, 523602.65731462924, 524657.0521042084, 525711.4468937876, 526765.8416833668, 527820.2364729459, 528874.631262525, 529929.0260521042, 530983.4208416834, 532037.8156312625, 533092.2104208417, 534146.6052104208, 535201.0])
+              .range([&#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffffccff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffefa5ff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#ffde7fff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#febf5aff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fe9e43ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#fd7134ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#f43c25ff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#db141eff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#b60026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;, &#x27;#800026ff&#x27;]);
+    
+
+    color_map_31b9f07d478e4b762de875680aff12fe.x = d3.scale.linear()
+              .domain([9058.0, 535201.0])
+              .range([0, 450 - 50]);
+
+    color_map_31b9f07d478e4b762de875680aff12fe.legend = L.control({position: &#x27;topright&#x27;});
+    color_map_31b9f07d478e4b762de875680aff12fe.legend.onAdd = function (map) {var div = L.DomUtil.create(&#x27;div&#x27;, &#x27;legend&#x27;); return div};
+    color_map_31b9f07d478e4b762de875680aff12fe.legend.addTo(map_a0862ad2b673ff01710502843b9a4be8);
+
+    color_map_31b9f07d478e4b762de875680aff12fe.xAxis = d3.svg.axis()
+        .scale(color_map_31b9f07d478e4b762de875680aff12fe.x)
+        .orient(&quot;top&quot;)
+        .tickSize(1)
+        .tickValues([9058.0, &#x27;&#x27;, 114286.6, &#x27;&#x27;, 219515.2, &#x27;&#x27;, 324743.8, &#x27;&#x27;, 429972.4, &#x27;&#x27;, 535201.0, &#x27;&#x27;]);
+
+    color_map_31b9f07d478e4b762de875680aff12fe.svg = d3.select(&quot;.legend.leaflet-control&quot;).append(&quot;svg&quot;)
+        .attr(&quot;id&quot;, &#x27;legend&#x27;)
+        .attr(&quot;width&quot;, 450)
+        .attr(&quot;height&quot;, 40);
+
+    color_map_31b9f07d478e4b762de875680aff12fe.g = color_map_31b9f07d478e4b762de875680aff12fe.svg.append(&quot;g&quot;)
+        .attr(&quot;class&quot;, &quot;key&quot;)
+        .attr(&quot;transform&quot;, &quot;translate(25,16)&quot;);
+
+    color_map_31b9f07d478e4b762de875680aff12fe.g.selectAll(&quot;rect&quot;)
+        .data(color_map_31b9f07d478e4b762de875680aff12fe.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_31b9f07d478e4b762de875680aff12fe.x(color_map_31b9f07d478e4b762de875680aff12fe.color.domain()[i - 1]) : color_map_31b9f07d478e4b762de875680aff12fe.x.range()[0],
+            x1: i &lt; color_map_31b9f07d478e4b762de875680aff12fe.color.domain().length ? color_map_31b9f07d478e4b762de875680aff12fe.x(color_map_31b9f07d478e4b762de875680aff12fe.color.domain()[i]) : color_map_31b9f07d478e4b762de875680aff12fe.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append(&quot;rect&quot;)
+        .attr(&quot;height&quot;, 40 - 30)
+        .attr(&quot;x&quot;, function(d) { return d.x0; })
+        .attr(&quot;width&quot;, function(d) { return d.x1 - d.x0; })
+        .style(&quot;fill&quot;, function(d) { return d.z; });
+
+    color_map_31b9f07d478e4b762de875680aff12fe.g.call(color_map_31b9f07d478e4b762de875680aff12fe.xAxis).append(&quot;text&quot;)
+        .attr(&quot;class&quot;, &quot;caption&quot;)
+        .attr(&quot;y&quot;, 21)
+        .text(&quot;Total de Atenciones&quot;);
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
+</div>
+<p>El mapa interactivo nos permite visualizar la distribución geográfica de las atenciones médicas en Barranquilla. Observamos que:</p>
+<ol class="arabic simple">
+<li><p>Los centros de salud con mayor número de atenciones se representan con marcadores más grandes y colores más intensos.</p></li>
+<li><p>Los Puntos de Atención en Salud Oportuna (<code class="docutils literal notranslate"><span class="pre">P.A.S.O.S.</span></code>), los Centros de Atención Médica Integral Oportuna (<code class="docutils literal notranslate"><span class="pre">C.A.M.I.N.O.S.</span></code>) y los <code class="docutils literal notranslate"><span class="pre">Hospitales</span></code> están distribuidos estratégicamente en la ciudad.</p></li>
+<li><p>La concentración de atenciones es mayor en ciertas zonas, lo que podría indicar áreas con mayor demanda de servicios de salud.</p></li>
+</ol>
+</section>
+<section id="analisis-de-los-diagnosticos-mas-frecuentes">
+<h1>Análisis de los Diagnósticos Más Frecuentes<a class="headerlink" href="#analisis-de-los-diagnosticos-mas-frecuentes" title="Link to this heading">#</a></h1>
+<p>Identificamos los diagnósticos más comunes entre los pacientes atendidos.
+<strong>Extracción de los Diagnósticos Más Frecuentes</strong>
+Obtenemos los 20 diagnósticos con mayor número de atenciones.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtener los 20 diagnósticos más frecuentes</span>
+<span class="n">top_diagnosticos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;top_diagnosticos.csv&#39;</span><span class="p">)</span>
+
+<span class="n">top_diagnosticos</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>diagnostico</th>
+      <th>total_atenciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Z000-EXAMEN MEDICO GENERAL</td>
+      <td>654993</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Z001-CONTROL DE SALUD DE RUTINA DEL NINO</td>
+      <td>326785</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Z012-EXAMEN ODONTOLOGICO</td>
+      <td>215738</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>K021-CARIES DE LA DENTINA</td>
+      <td>212620</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>I10X-HIPERTENSION ESENCIAL (PRIMARIA)</td>
+      <td>173499</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Creamos un gráfico de barras horizontal para visualizar los diagnósticos más frecuentes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asegúrate de que el DataFrame tenga suficientes diagnósticos</span>
+<span class="n">top_20_diagnosticos</span> <span class="o">=</span> <span class="n">top_diagnosticos</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># Limitar los nombres de los diagnósticos a 50 caracteres</span>
+<span class="n">top_20_diagnosticos</span><span class="p">[</span><span class="s1">&#39;diagnostico_truncado&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">top_20_diagnosticos</span><span class="p">[</span><span class="s1">&#39;diagnostico&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># Importar matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Configurar el tamaño de la figura</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Crear el gráfico de barras horizontal estático</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span>
+    <span class="n">top_20_diagnosticos</span><span class="p">[</span><span class="s1">&#39;diagnostico_truncado&#39;</span><span class="p">],</span>
+    <span class="n">top_20_diagnosticos</span><span class="p">[</span><span class="s1">&#39;total_atenciones&#39;</span><span class="p">],</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#4A90E2&#39;</span>
+<span class="p">)</span>
+
+<span class="c1"># Personalizar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Número de Ingresos&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Diagnóstico&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top 20 Diagnósticos de Mayor Frecuencia&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Ajustar el layout para evitar cortes en los labels</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/89f89611d54c8fe108f5e1b80898fd258557cc073fed8ce9c355340217daa8fc.png" src="_images/89f89611d54c8fe108f5e1b80898fd258557cc073fed8ce9c355340217daa8fc.png" />
+</div>
+</div>
+<p>A partir de los resultados, podemos hacer las siguientes observaciones:</p>
+<ol class="arabic simple">
+<li><p><strong>Exámenes médicos generales y controles rutinarios</strong>:
+Los diagnósticos relacionados con exámenes médicos generales (<code class="docutils literal notranslate"><span class="pre">Z000</span></code>) y controles de salud rutinarios para niños (<code class="docutils literal notranslate"><span class="pre">Z001</span></code>) son los más frecuentes, superando las 600,000 atenciones.</p></li>
+<li><p><strong>Problemas odontológicos</strong>:
+Diagnósticos como la <code class="docutils literal notranslate"><span class="pre">caries</span> <span class="pre">dental</span></code> (<code class="docutils literal notranslate"><span class="pre">K021</span></code>) y la <code class="docutils literal notranslate"><span class="pre">gingivitis</span></code> (<code class="docutils literal notranslate"><span class="pre">K050</span></code> y <code class="docutils literal notranslate"><span class="pre">K051</span></code>) ocupan un lugar destacado en el gráfico. Esto pone en evidencia la importancia de la atención en salud bucal en la población.</p></li>
+<li><p><strong>Enfermedades crónicas</strong>:
+La <code class="docutils literal notranslate"><span class="pre">hipertensión</span> <span class="pre">esencial</span> <span class="pre">primaria</span></code> (<code class="docutils literal notranslate"><span class="pre">I10X</span></code>) se posiciona entre los diagnósticos más comunes, lo que subraya la relevancia de las enfermedades crónicas en la población atendida.</p></li>
+<li><p><strong>Condiciones relacionadas con la maternidad</strong>:
+Diagnósticos como la <code class="docutils literal notranslate"><span class="pre">supervisión</span> <span class="pre">de</span> <span class="pre">embarazo</span> <span class="pre">de</span> <span class="pre">alto</span> <span class="pre">riesgo</span></code> (<code class="docutils literal notranslate"><span class="pre">Z359</span></code>) también figuran entre los más frecuentes. Esto resalta la importancia de los servicios de salud materna y la atención especializada durante el embarazo.</p></li>
+</ol>
+</section>
+<section id="evolucion-del-numero-de-atenciones-por-semana">
+<h1>Evolución del Número de Atenciones por Semana<a class="headerlink" href="#evolucion-del-numero-de-atenciones-por-semana" title="Link to this heading">#</a></h1>
+<p>Analizamos cómo ha evolucionado el número de atenciones médicas a lo largo del tiempo, desde enero de 2022 hasta julio de 2024.</p>
+<p><strong>Extracción de Datos</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtener registros únicos de &quot;ingreso&quot; y las fechas de ingreso desde enero de 2022</span>
+<span class="n">data_unicos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data_unicos.csv&#39;</span><span class="p">)</span>
+<span class="n">data_unicos</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ingreso</th>
+      <th>fecha_ingreso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>15523392</td>
+      <td>2024-01-19</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>16140800</td>
+      <td>2024-04-03</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16702501</td>
+      <td>2024-06-11</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>16371614</td>
+      <td>2024-04-27</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9927366</td>
+      <td>2022-03-10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><strong>Preparación de los Datos</strong></p>
+<p>Convertimos las fechas al formato datetime y agrupamos las atenciones por semana.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convertir la fecha de ingreso al formato datetime</span>
+<span class="n">data_unicos</span><span class="p">[</span><span class="s1">&#39;fecha_ingreso&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data_unicos</span><span class="p">[</span><span class="s1">&#39;fecha_ingreso&#39;</span><span class="p">])</span>
+
+<span class="c1"># Obtener el inicio de la semana para cada fecha</span>
+<span class="n">data_unicos</span><span class="p">[</span><span class="s1">&#39;semana_ingreso&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_unicos</span><span class="p">[</span><span class="s1">&#39;fecha_ingreso&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_timedelta</span><span class="p">(</span><span class="n">data_unicos</span><span class="p">[</span><span class="s1">&#39;fecha_ingreso&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">weekday</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Agrupar por semana y contar el número de atenciones</span>
+<span class="n">serie_tiempo_atenciones</span> <span class="o">=</span> <span class="n">data_unicos</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;semana_ingreso&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;ingreso&#39;</span><span class="p">:</span> <span class="s1">&#39;count&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">serie_tiempo_atenciones</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;ingreso&#39;</span><span class="p">:</span> <span class="s1">&#39;atenciones&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Visualización de la Evolución de Atenciones</strong></p>
+<p>Utilizamos <code class="docutils literal notranslate"><span class="pre">Plotly</span></code> para crear un gráfico interactivo que muestra la evolución semanal del número de atenciones.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importar las bibliotecas necesarias</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.dates</span> <span class="k">as</span> <span class="nn">mdates</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Asegurarse de que &#39;semana_ingreso&#39; sea de tipo datetime</span>
+<span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;semana_ingreso&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;semana_ingreso&#39;</span><span class="p">])</span>
+
+<span class="c1"># Crear el gráfico de líneas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;semana_ingreso&#39;</span><span class="p">],</span>
+    <span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;atenciones&#39;</span><span class="p">],</span>
+    <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#4A90E2&#39;</span><span class="p">,</span>
+    <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">markersize</span><span class="o">=</span><span class="mi">6</span>
+<span class="p">)</span>
+
+<span class="c1"># Establecer el formato de fecha en el eje x</span>
+<span class="n">date_formatter</span> <span class="o">=</span> <span class="n">mdates</span><span class="o">.</span><span class="n">DateFormatter</span><span class="p">(</span><span class="s1">&#39;%b %Y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">date_formatter</span><span class="p">)</span>
+
+<span class="c1"># Rotar las etiquetas del eje x</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=-</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="c1"># Etiquetas y título</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Semana de Ingreso&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Número de Atenciones&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Número de Atenciones por Semana&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="c1"># Ajustar los márgenes</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/bfe0184a5ed13e0a13cd4af4e4949fc4ddabf3cb188ef45afe28d138f3f136d0.png" src="_images/bfe0184a5ed13e0a13cd4af4e4949fc4ddabf3cb188ef45afe28d138f3f136d0.png" />
+</div>
+</div>
+<p>Podemos hacer las siguientes observaciones:</p>
+<ol class="arabic simple">
+<li><p><strong>Fluctuaciones semanales</strong>: Se observan variaciones considerables en la cantidad de atenciones por semana, lo que sugiere que la demanda de servicios de salud no es constante a lo largo del tiempo.</p></li>
+<li><p><strong>Picos significativos</strong>: En varias ocasiones, el número de atenciones alcanza niveles máximos que superan las 50,000 atenciones semanales.</p></li>
+<li><p><strong>Tendencia general</strong>: A lo largo del período analizado, aunque las atenciones semanales fluctúan, el promedio general parece mantenerse entre las 40,000 y 45,000 atenciones.</p></li>
+<li><p><strong>Caídas abruptas</strong>: También se observan caídas pronunciadas en algunas semanas, donde el número de atenciones baja significativamente.</p></li>
+</ol>
+</section>
+<section id="descomposicion-de-la-serie-temporal">
+<h1>Descomposición de la Serie Temporal<a class="headerlink" href="#descomposicion-de-la-serie-temporal" title="Link to this heading">#</a></h1>
+<p>Utilizaremos el método de descomposición aditiva para separar la serie en sus componentes: tendencia, estacionalidad y residuo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Aplicar la descomposición estacional</span>
+<span class="n">decompose_result</span> <span class="o">=</span> <span class="n">seasonal_decompose</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;atenciones&#39;</span><span class="p">],</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;additive&#39;</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asegurarse de que &#39;serie_tiempo_atenciones&#39; tenga un índice de tipo datetime</span>
+<span class="n">serie_tiempo_atenciones</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="c1"># Crear una figura con 4 subplots verticales que comparten el eje X</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Serie Original</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">decompose_result</span><span class="o">.</span><span class="n">observed</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Serie Original&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Atenciones&#39;</span><span class="p">)</span>
+
+<span class="c1"># Tendencia</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">decompose_result</span><span class="o">.</span><span class="n">trend</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Tendencia&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Atenciones&#39;</span><span class="p">)</span>
+
+<span class="c1"># Estacionalidad</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">decompose_result</span><span class="o">.</span><span class="n">seasonal</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Estacionalidad&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Atenciones&#39;</span><span class="p">)</span>
+
+<span class="c1"># Residuos</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">decompose_result</span><span class="o">.</span><span class="n">resid</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Residuos&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Atenciones&#39;</span><span class="p">)</span>
+
+<span class="c1"># Formatear el eje X para mostrar fechas legibles</span>
+<span class="n">date_formatter</span> <span class="o">=</span> <span class="n">mdates</span><span class="o">.</span><span class="n">DateFormatter</span><span class="p">(</span><span class="s1">&#39;%b %Y&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">date_formatter</span><span class="p">)</span>
+
+<span class="c1"># Rotar las etiquetas del eje X</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">setp</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">get_majorticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=-</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="c1"># Establecer el título general de la figura</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Descomposición de la Serie Temporal de Atenciones Semanales&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="c1"># Ajustar los márgenes y espacios entre subplots</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">rect</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">])</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/823ae5a7a3c498fe372f55a1acb66ab417c48ead202906de7228f4024f525ab8.png" src="_images/823ae5a7a3c498fe372f55a1acb66ab417c48ead202906de7228f4024f525ab8.png" />
+</div>
+</div>
+<section id="interpretacion-de-los-componentes-de-la-serie-temporal">
+<h2>Interpretación de los Componentes de la Serie Temporal<a class="headerlink" href="#interpretacion-de-los-componentes-de-la-serie-temporal" title="Link to this heading">#</a></h2>
+<section id="componente-de-tendencia">
+<h3>Componente de Tendencia<a class="headerlink" href="#componente-de-tendencia" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Se observa que la tendencia muestra un comportamiento <strong>ligeramente ascendente</strong> en ciertos periodos, lo que podría indicar un <strong>aumento gradual</strong> en la demanda de servicios de salud en algunas épocas.</p></li>
+<li><p>Hay momentos donde la tendencia se mantiene <strong>estable</strong> o incluso <strong>desciende</strong>, lo que sugiere que la demanda de atenciones en salud pudo haberse visto influenciada por factores externos.</p></li>
+</ul>
+</section>
+<section id="componente-estacional">
+<h3>Componente Estacional<a class="headerlink" href="#componente-estacional" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Los patrones de <strong>estacionalidad</strong> parecen estar alineados con ciclos anuales, con picos y valles recurrentes que se <strong>repiten aproximadamente cada 52 semanas</strong>.</p></li>
+</ul>
+</section>
+<section id="componente-residual">
+<h3>Componente Residual<a class="headerlink" href="#componente-residual" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>En este caso, los <strong>residuos</strong> muestran una distribución <strong>sin patrones claros</strong>, lo que indica que el modelo de descomposición captura de manera adecuada la tendencia y la estacionalidad.</p></li>
+<li><p>No obstante, algunas <strong>fluctuaciones más pronunciadas</strong> en ciertos momentos podrían señalar <strong>anomalías o eventos inusuales</strong> que afectaron la demanda, como pandemias, emergencias de salud pública o fallas en la infraestructura de salud.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="evaluacion-de-estacionariedad">
+<h1>Evaluación de Estacionariedad<a class="headerlink" href="#evaluacion-de-estacionariedad" title="Link to this heading">#</a></h1>
+<p>Utilizamos la prueba de <code class="docutils literal notranslate"><span class="pre">Dickey-Fuller</span></code> aumentada (<code class="docutils literal notranslate"><span class="pre">ADF</span></code>) para evaluar si la serie es estacionaria</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.tsa.stattools</span> <span class="kn">import</span> <span class="n">adfuller</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;atenciones&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Estadístico ADF:&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valor p:&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valores Críticos:&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">result</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="si">%s</span><span class="s1">: </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadístico ADF: -10.806335964356952
+Valor p: 1.9589904982321583e-19
+Valores Críticos:
+	1%: -3.480
+	5%: -2.883
+	10%: -2.578
+</pre></div>
+</div>
+</div>
+</div>
+<p>El valor p obtenido (1.959e-19) es extremadamente bajo, mucho menor que cualquier nivel de significancia típico (como 0.01, 0.05 o 0.10). Además, el estadístico ADF (-10.806) es menor que todos los valores críticos en los diferentes niveles (1%, 5%, y 10%).</p>
+<p>Por lo tanto, con base en estos resultados:</p>
+<p>Rechazamos la hipótesis nula de que la serie temporal tiene una raíz unitaria, lo que significa que la serie es estacionaria.
+No parece necesario aplicar diferenciación u otras transformaciones adicionales para estabilizar la media de la serie, ya que los resultados del test ADF indican que la serie no presenta problemas de no estacionariedad.</p>
+</section>
+<section id="autocorrelacion-y-autocorrelacion-parcial">
+<h1>Autocorrelación y Autocorrelación Parcial<a class="headerlink" href="#autocorrelacion-y-autocorrelacion-parcial" title="Link to this heading">#</a></h1>
+<p>Graficamos las funciones de autocorrelación (ACF) y autocorrelación parcial (PACF) para identificar patrones en las dependencias temporales.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.graphics.tsaplots</span> <span class="kn">import</span> <span class="n">plot_acf</span><span class="p">,</span> <span class="n">plot_pacf</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># ACF</span>
+<span class="n">plot_acf</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;atenciones&#39;</span><span class="p">],</span> <span class="n">lags</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Función de Autocorrelación (ACF)&#39;</span><span class="p">)</span>
+
+<span class="c1"># PACF</span>
+<span class="n">plot_pacf</span><span class="p">(</span><span class="n">serie_tiempo_atenciones</span><span class="p">[</span><span class="s1">&#39;atenciones&#39;</span><span class="p">],</span> <span class="n">lags</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;ywm&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Función de Autocorrelación Parcial (PACF)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8928971876b400613ff521bf948d77cc69fa7a60825dbf02f140216a4110d297.png" src="_images/8928971876b400613ff521bf948d77cc69fa7a60825dbf02f140216a4110d297.png" />
+</div>
+</div>
+<p><strong>Autocorrelación (ACF)</strong></p>
+<p>En este caso, observamos que el valor en el primer rezago (lag 1) tiene una autocorrelación alta, lo que sugiere que el valor de las atenciones en una semana está fuertemente relacionado con el valor de la semana anterior.
+A medida que los rezagos aumentan, las correlaciones tienden a caer dentro de la zona sombreada, lo que indica que no hay correlaciones significativas más allá de ciertos rezagos. Esto es indicativo de un comportamiento AR(1), donde el valor actual depende principalmente del rezago inmediato.</p>
+<p><strong>Autocorrelación Parcial (PACF)</strong></p>
+<p>El primer valor en la PACF muestra una correlación significativa, lo que refuerza la hipótesis de que un modelo AR(1) podría ser apropiado para capturar la estructura de la serie.
+No hay rezagos adicionales con una correlación significativa más allá del primero, lo que sugiere que no es necesario incluir términos de mayor orden en el modelo AR.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introducción</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-librerias-y-conexion-a-la-base-de-datos">Importación de Librerías y Conexión a la Base de Datos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-la-demanda-de-servicios">Análisis de la Demanda de Servicios</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-de-atenciones-por-centro-de-salud">Mapa de Atenciones por Centro de Salud</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtencion-de-las-coordenadas-de-los-centros">Obtención de las Coordenadas de los Centros</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-los-datos-para-el-mapa">Preparación de los Datos para el Mapa</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-interactivo">Mapa Interactivo</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-los-diagnosticos-mas-frecuentes">Análisis de los Diagnósticos Más Frecuentes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evolucion-del-numero-de-atenciones-por-semana">Evolución del Número de Atenciones por Semana</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#descomposicion-de-la-serie-temporal">Descomposición de la Serie Temporal</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-de-los-componentes-de-la-serie-temporal">Interpretación de los Componentes de la Serie Temporal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componente-de-tendencia">Componente de Tendencia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componente-estacional">Componente Estacional</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componente-residual">Componente Residual</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-de-estacionariedad">Evaluación de Estacionariedad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#autocorrelacion-y-autocorrelacion-parcial">Autocorrelación y Autocorrelación Parcial</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jose Javier Mercado Reyes
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
